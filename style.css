@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    width: 100vw;
+    margin: 0;
+}
+.BarraDeAnuncios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(187, 132, 149);
+    width: 100vw;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffe6ee;
+    border-bottom: solid 3px hsl(347, 21%, 49%);
+    cursor:default;
+}
+
+Header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+Header img{
+    margin: 0;
+    width: 22vw;
+}
+a{
+    
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    color: rgb(153, 84, 107);
+}
+
+/*Integração de fontes*/
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
