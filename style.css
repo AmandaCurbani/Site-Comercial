@@ -3,19 +3,36 @@
     width: 100vw;
     margin: 0;
 }
+body{
+    overflow: hidden;
+}
 .BarraDeAnuncios{
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: rgb(187, 132, 149);
     width: 100vw;
-    text-align: center;
     font-family: "Poppins", serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
     color: #ffe6ee;
-    border-bottom: solid 3px hsl(347, 21%, 49%);
     cursor:default;
+    display: flex;
+    flex-direction: row;
+}
+.marquee{
+    margin-left: 100px;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }
 
 Header{
@@ -26,6 +43,7 @@ Header{
     justify-content: center;
     text-align: center;
     align-items: center;
+    border-bottom: solid 3px hsl(347, 21%, 49%);
 }
 Header img{
     margin: 0;
@@ -37,6 +55,7 @@ a{
     font-family: "Poppins", serif;
     font-weight: 400;
     color: rgb(153, 84, 107);
+    font-size: 1vw ;
 }
 
 /*Integração de fontes*/
