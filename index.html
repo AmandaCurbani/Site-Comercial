@@ -39,17 +39,57 @@
         <a href="">Sobre</a>
     </Header>
 
-    <aside id="Inicio">
+    <section id="Inicio">
         <div>
             <h1>O autocuidado é como você recupera seu poder.</h1>
                 <p><img src="./icones/check.png"> Naturalidade e Beleza</p>
                 <p><img src="./icones/check.png"> Tratamentos Faciais, Corporais e Capilares</p>
                 <p><img src="./icones/check.png"> Auxiliando a elevar ainda mais sua Beleza</p>
                 </img>
-                <a id="" href="#Produtos"> Agende já sua consulta!</a>
+                <a id="" href="#Localização"> Agende já sua consulta!</a>
         </div>
-    </aside>
-    <!--PROCEDIMENTOS-->
+    </section>
+
+    <!--LOCALIZAÇÃO-->
+    <section id="LocalContato">
+        <aside id="Localização">
+            <div id="Mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.660324641176!2d-41.205918825909876!3d-20.601924759581216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb97d1f7a8123c9%3A0xff3079d43233e969!2sDra.%20Aline%20Curbani!5e0!3m2!1spt-BR!2sbr!4v1743625218717!5m2!1spt-BR!2sbr" width="600" height="450" style="border: 1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="InfoLocalizacao">
+                <h1>Locais de Atendimento</h1>
+                <h2>Escolha o melhor local para você</h2>
+                <hr>
+
+                <button id="Castelo">Castelo - ES</button>
+                <button id="VNI">Venda Nova do Imigrante - ES</button>
+            </div>
+        </aside>
+
+        <!--CONTATO-->
+        <aside id="Contato">
+            <div id="Contatos">
+                <h1>Formas de Contato</h1>
+                <h2>Agende já sua consulta ou conheça mais sobre meu trabalho</h2>
+                <hr>
+
+                <div id="ContainerRedes">
+                    <img src="./icones/whatsapp.png" alt="">
+                    <p>Whatsapp</p>
+                </div>
+
+                <div id="ContainerRedes">
+                    <img src="./icones/instagram.png" alt="">
+                    <p>Instagram</p>
+                </div>
+            </div>
+            <img src="./img/IconeLogo.png" alt="">
+            <img src="./img/NomeSemLogo.png" alt="">
+        </aside>
+</section>
+
+
+    <!--PROCEDIMENTOS
     <aside id="Procedimento"><button id="prev">◄</button>
         <div id="GaleriaProcedimento">
         <div id="Gradient">
@@ -98,7 +138,7 @@
     </div>
 
     <button id="next">►</button>
-    </aside>
+    </aside>-->
 
     <aside id="Produtos">
         
@@ -108,5 +148,22 @@
             
         </div>
     </aside>
+
+    <script>
+        document.getElementById("VNI").addEventListener("click", function(){
+            let iframe = document.querySelector("iframe");
+            if(iframe){
+                iframe.src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d935.2914966902913!2d-41.13036953049264!3d-20.33476044129644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb98fdb2ecd91ff%3A0x9dc96645c3e36bd8!2sR.%20Dona%20Ana%2C%2038%20-%20Centro%2C%20Venda%20Nova%20do%20Imigrante%20-%20ES%2C%2029375-000!5e0!3m2!1spt-BR!2sbr!4v1743641912432!5m2!1spt-BR!2sbr";
+            
+            }
+        })
+        document.getElementById("Castelo").addEventListener("click", function(){
+            let iframe = document.querySelector("iframe");
+            if(iframe){
+                iframe.src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.660324641176!2d-41.205918825909876!3d-20.601924759581216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb97d1f7a8123c9%3A0xff3079d43233e969!2sDra.%20Aline%20Curbani!5e0!3m2!1spt-BR!2sbr!4v1743625218717!5m2!1spt-BR!2sbr";
+            
+            }
+        })
+    </script>
 </body>
 </html>
