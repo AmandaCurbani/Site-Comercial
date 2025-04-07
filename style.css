@@ -59,7 +59,7 @@ Header img{
     margin: 0;
     width: 250px;
 }
-a{
+Header a{
     text-align: center;
     display: inline-block;
     padding: 1px 20px;
@@ -144,12 +144,14 @@ Header a:before {
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+
 }
 #Inicio a:hover {
     transform: scale(1.05);
     transition: cubic-bezier(0.65, 0.05, 0.36, 1) .5s;
-    background: linear-gradient(0.2turn, #a05679, #a05679, #a05679);
-    color: #fafafa;
 }
 #Inicio a:not(:hover)
 {
@@ -157,12 +159,14 @@ Header a:before {
 }
 /*Localização*/
 #LocalContato{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
     
 }
 #Localização{
     margin-left:5vw;
-    margin-right: 45vw;
+    margin-right: 5vw;
     margin-bottom: 50px;
     margin-top: 50px;
     height: 500px;
@@ -190,8 +194,8 @@ Header a:before {
 
 #InfoLocalizacao{
     display: flex;
-    height: 500px;
     width: 20vw;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -218,7 +222,7 @@ hr{
     border-color: #b4687f;
     margin-bottom: 40px;
 }
-#InfoLocalizacao button{
+#InfoLocalizacao button,#ContainerRedes{
     border-radius: 10px;
     border: none;
     padding: 10px;
@@ -231,26 +235,90 @@ hr{
     cursor: pointer;
 
 }
-#InfoLocalizacao button:hover{
+#InfoLocalizacao button:hover, #ContainerRedes:hover{
     transform: scale(1.1);
     transition: cubic-bezier(0.65, 0.05, 0.36, 1) .5s;
-    background-color: #9b6174;
+    background-color: #a05679;
 }
-#InfoLocalizacao button:not(:hover)
+#InfoLocalizacao button:not(:hover), #ContainerRedes:not(:hover)
 {
-    transition: cubic-bezier(0.65, 0.05, 0.36, 1) .5s;
+    transition: cubic-bezier(0.65, 0.05, 0.36, 1) .2s;
 }
 
 /*Contato*/
-#Contato{
-    margin-bottom: 50px;
+#Contatos{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     margin-top: 50px;
     height: 500px;
-    width: 55vw;
+    width: 30vw;
+    margin-right: 5vw;
     background-color: #bb8495;
     border-radius: 40px;
-    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
 }
+#Contatos h1{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #ffffff;
+}
+#Contatos h2{
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+#ContainerRedes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #b4687f;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+#ContainerRedes img{
+    width: 20px;
+    height: 20px;
+    
+}
+#ContainerRedes a{
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: 5px;
+}
+#Logo{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100px;
+    width: 30vw;
+
+}
+#Logo2{
+    width: auto;
+    max-height: 60px;
+    background-color: #edc1ce;
+    border-radius: 20px;
+    padding: 12px;
+}
+
 
 
 
@@ -352,21 +420,22 @@ hr{
 
 /*Scroll Bar*/
 
+/*PRODUTOS*/
+
 #Produtos{
     border-top: solid 3px rgb(153, 84, 107);
     display: flex;
     overflow: hidden;
-    height: 550px;
+    height: 450px;
     width: 100vw;
     background-color: #ffe6ee;
 }
 #InfoProdutos{
-    position: relative;
     display: flex;
     flex-direction: column;
     background-color: #bb8495;
-    height: 550px;
     justify-content: center;
+    align-items: center;
     text-align: center;
     width: 40vw;
 }
@@ -376,10 +445,56 @@ hr{
     font-weight: 500;
     font-style: normal;
 }
+#InfoProdutos img{
+    width: 70px;
+    filter: saturate(0);
+    filter: brightness(100);
+    opacity: 70%;
+    padding: 10px;
+}
 #InfoProdutos p{
     color: #ffe6ee;
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: "Poppins", serif;
     font-weight: 300;
     font-style: normal;
+}
+#SliderProdutos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+}
+#ContainerCard{
+    height: 400px;
+    width: 250px;
+    margin-left: 30px;
+}
+#Card{
+    display: flex;
+    background-color: #edc1ce;
+    height: 300px;
+    width: 250px;
+    border-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: end;
+}
+#Card h1{
+    background-color: #bb8495;
+    width: 250px;
+    margin-bottom: 35px;
+    color: #ffe6ee;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+#ContainerCard p{
+    margin-top: 25px;
+    text-align: center;
+    background-color: #bb8495;
+    width: 230px;
+    padding: 10px;
+    border-radius: 10px;
 }

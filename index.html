@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aline Curbani</title>
+    <link rel="shortcut icon" type="imagex/png" href="./img/IconeLogo.png">
 </head>
 
 <!--LINK DE FONTE-->
@@ -35,7 +36,7 @@
         <img src="./img/LogoNome.png" alt="Logo Escrita">
 
         <a href="">Resultados</a>
-        <a href="">Contato</a>
+        <a href="#Contato">Contato</a>
         <a href="">Sobre</a>
     </Header>
 
@@ -46,7 +47,7 @@
                 <p><img src="./icones/check.png"> Tratamentos Faciais, Corporais e Capilares</p>
                 <p><img src="./icones/check.png"> Auxiliando a elevar ainda mais sua Beleza</p>
                 </img>
-                <a id="" href="#Localização"> Agende já sua consulta!</a>
+                <a id="" href="#Contato"> Agende já sua consulta!</a>
         </div>
     </section>
 
@@ -71,21 +72,25 @@
             <div id="Contatos">
                 <h1>Formas de Contato</h1>
                 <h2>Agende já sua consulta ou conheça mais sobre meu trabalho</h2>
-                <hr>
+                
 
-                <div id="ContainerRedes">
+                <button id="ContainerRedes">
                     <img src="./icones/whatsapp.png" alt="">
-                    <p>Whatsapp</p>
-                </div>
+                    <a href="https://wa.link/0rjxoh" target="_blank">Whatzapp</a>
+                </button>
 
-                <div id="ContainerRedes">
+                <button id="ContainerRedes">
                     <img src="./icones/instagram.png" alt="">
-                    <p>Instagram</p>
-                </div>
+                    <a href="https://www.instagram.com/dra.alinecurbani/" target="_blank">Instagram</a>
+                </button>
+                <div id="Logo">
+                <img src="./img/NomeSemLogo.png" alt="" id="Logo2">
+    </div>
             </div>
-            <img src="./img/IconeLogo.png" alt="">
-            <img src="./img/NomeSemLogo.png" alt="">
+            
         </aside>
+        
+        
 </section>
 
 
@@ -144,11 +149,22 @@
         
         <div id="InfoProdutos">
             <h1>Realce sua beleza natural</h1>
+            <img src="./img/IconeLogo.png" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex commodi illo architecto recusanda.</p>
             
         </div>
+        <div id="SliderProdutos">
+            <div id="ContainerCard">
+                <div id="Card">
+                    <h1>Botox</h1>
+                </div>
+                <p>é um procedimento</p>
+            </div>
+        </div>
     </aside>
 
+
+    <!--JAVA SCRIPT-->
     <script>
         document.getElementById("VNI").addEventListener("click", function(){
             let iframe = document.querySelector("iframe");
